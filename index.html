@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PT Rezeki Assurance — ERP Dashboard</title>
+  <meta name="description" content="Mock ERP dashboard for PT Rezeki Assurance — insurance operations, claims, policies, finance, risk &amp; compliance.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2307beb8'/%3E%3Ctext x='16' y='22' font-family='system-ui' font-size='18' text-anchor='middle' fill='white' font-weight='700'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="layout">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo"><i class="ri-shield-star-line"></i></div>
+        <div class="sidebar-title">
+          Rezeki Assurance
+          <small>ERP Dashboard</small>
+        </div>
+      </div>
+      <div class="sidebar-user">
+        <img src="https://ui-avatars.com/api/?name=Rizal+Fadhilah&background=07beb8&color=fff" alt="user">
+        <div class="sidebar-user-info">
+          <div class="name">Rizal Fadhilah</div>
+          <div class="role">Direktur TI</div>
+        </div>
+      </div>
+      <div class="sidebar-search">
+        <div class="input-wrap">
+          <i class="ri-search-line"></i>
+          <input id="sidebarSearch" type="text" placeholder="Cari menu...">
+        </div>
+      </div>
+      <nav class="sidebar-nav" id="sidebarNav"></nav>
+    </aside>
+
+    <!-- ============ MAIN ============ -->
+    <div class="main">
+      <header class="navbar">
+        <button class="collapse-btn" id="collapseBtn" aria-label="Collapse sidebar"><i class="ri-menu-line"></i></button>
+        <div class="breadcrumb" id="breadcrumb">
+          <span>Dashboard</span>
+          <span class="sep">/</span>
+          <span class="current">Overview</span>
+        </div>
+        <div class="spacer"></div>
+        <div class="nav-search">
+          <i class="ri-search-line"></i>
+          <input id="globalSearch" type="text" placeholder="Cari di tabel aktif...">
+        </div>
+        <button class="icon-btn" aria-label="Notifikasi">
+          <i class="ri-notification-3-line"></i>
+          <span class="badge">3</span>
+        </button>
+        <button class="icon-btn" id="themeBtn" aria-label="Ubah tema"><i class="ri-moon-line"></i></button>
+        <div class="user">
+          <img src="https://ui-avatars.com/api/?name=Rizal+Fadhilah&background=07beb8&color=fff" alt="user">
+          <div>
+            <div class="name">Rizal Fadhilah</div>
+            <div class="role">Direktur TI</div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content" id="content">
+        <!-- Pages rendered by js/pages.js -->
+      </main>
+    </div>
+  </div>
+
+  <!-- Row tooltip (floating) -->
+  <div class="row-tooltip" id="rowTooltip"></div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="ri-arrow-up-circle-line"></i></button>
+
+  <!-- Chart.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/pages.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
